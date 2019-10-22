@@ -53,7 +53,9 @@ footer {
     display: flex;
     position: absolute;
     right: 25px;
-    top: 35px;
+    top: 25px;
+    height: 25px;
+    width: 45px;
 }
 .header-menu-trigger span {
     width: 45px;
@@ -67,7 +69,7 @@ footer {
     height: 5px;
     left: 0;
     background: #f36b47;
-    top: -10px;
+    top: 10px;
 }
 .header-menu-trigger span:after {
     position: absolute;
@@ -76,7 +78,7 @@ footer {
     height: 5px;
     left: 0;
     background: #f36b47;
-    top: 10px;
+    top: 20px;
 }
 
 /* Slider */
@@ -113,13 +115,185 @@ footer {
 .slide-description {
     padding: 20px;
     font-size: initial;
+    box-sizing: border-box;
+    height: 60px;
 }
 .slide-description span {
-    font-size: 12px;
+    font-size: 13px;
 }
 .slide-description strong {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: normal;
     text-decoration: underline;
     text-transform: uppercase;
+}
+.slide-overlay {
+    position: absolute;
+    height: calc(100% - 60px);
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    top: 0;
+}
+h2 {
+    font-weight: normal;
+    text-align: center;
+    color: #484848;
+}
+h2 .underline {
+    border-bottom: 2px solid #f36b47;
+}
+p {
+    color: #9d9c9c;
+    text-align: center;
+}
+.about-us {
+    padding: 20px 25px;
+}
+.company-info {
+    padding: 20px;
+    border-top: 8px solid #f36b47;
+    border-bottom: 8px solid #f36b47;
+}
+.company-info-item {
+    text-align: center;
+    margin: 30px 55px;
+}
+.company-info-item img {
+    width: 30px;
+    height: auto;
+}
+.recent-projects {
+    padding: 80px 50px 10px;
+}
+.project-tire {
+    width: 250px;
+    border: 1px solid #e0dddd;
+    margin: 70px auto;
+    text-align: center;
+    background: #eeeeee;
+    overflow: hidden;
+}
+.project-tire .logo-wrapper {
+    width: 250px;
+    height: 165px;
+    overflow: hidden;
+    margin: 0 auto;
+    border-bottom: 1px solid #e0dddd;
+}
+.project-tire img {
+    width: 100%;
+    height: auto;
+}
+.project-tire h3 {
+    color: #fe5c32;
+    font-weight: normal;
+    margin: 5px auto;
+    border-bottom: 1px solid #e0dddd;
+    width: 230px;
+}
+.project-tire p {
+    margin: 5px 0;
+}
+.talk-to-us {
+    background: #7a7a7a;
+    padding: 60px 15px 60px 25px;
+}
+.talk-to-us p {
+    color: #ffffff;
+    font-size: 25px;
+}
+.talk-to-us h2 {
+    font-size: 48px;
+}
+.talk-to-us .first-text {
+    color: #ffffff;
+}
+.talk-to-us .second-text {
+    color: #f36b47;
+}
+.contact-us {
+    margin: 60px 20px 110px;
+}
+.contact-us h2 {
+    font-size: 48px;
+    margin-bottom: 50px;
+}
+.contact-us p {
+    font-size: 23px;
+    color: #9d9c9c;
+}
+.map img {
+    width: 100%;
+    height: auto;
+}
+.contact-details {
+    margin: 80px 10px 10px 20px;
+}
+.contact-details h2 {
+    font-size: 48px;
+    padding-bottom: 10px;
+    position: relative;
+    margin-bottom: 70px;
+
+}
+.contact-details h2:before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    bottom: 0;
+    left: 25%;
+    border-bottom: 2px solid #f36b47;
+}
+.contact-details span {
+    color: #9d9c9c;
+    font-size: 26px;
+}
+.contact-details .location span {
+    font-weight: 500;
+}
+.contact-details div {
+    margin: 30px 70px 30px 35px;
+    padding-left: 70px;
+    background-position: left center;
+    background-size: 30px;
+    background-repeat: no-repeat;
+}
+.phone {
+    background-image: url("../images/icons/phone.svg");
+}
+.email {
+    background-image: url("../images/icons/mail.svg");
+}
+.location {
+    background-image: url("../images/icons/location.svg");
+}
+textarea {
+    resize: none;
+}
+.contact-form input[type="text"],
+.contact-form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+    background-color: #f0f0f0;
+    border-color: #cac6c6;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border-width: 1px;
+    color: #9d9c9c;
+}
+.contact-form input[type="submit"] {
+    color: #ffffff;
+    background-color: #f36b47;
+    margin: 0 auto;
+    font-size: 20px;
+    border: none;
+    border-radius: 3px;
+    display: block;
+    padding: 5px 120px 10px;
+}
+.contact-form input[type="submit"]:hover {
+    cursor: pointer;
 }
