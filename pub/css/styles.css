@@ -1,4 +1,3 @@
-/* Attaching fonts */
 @font-face {
   font-family: 'MyriadPro';
   src: url('/fonts/MyriadPro-Regular.eot');
@@ -20,7 +19,7 @@ body {
   color: #eff7f8;
 }
 .color-white {
-  color: #ffffff;
+  color: white;
 }
 .background-orange {
   background: #f36b47;
@@ -54,9 +53,11 @@ footer {
 .header-menu-trigger span {
   width: 45px;
   height: 5px;
-  background-color: #f36b47;
+  background: #f36b47;
+  transition: 0.3s;
 }
-.header-menu-trigger span:before {
+.header-menu-trigger span:before,
+.header-menu-trigger span:after {
   position: absolute;
   content: '';
   width: 45px;
@@ -66,13 +67,14 @@ footer {
   top: 10px;
 }
 .header-menu-trigger span:after {
-  position: absolute;
-  content: '';
-  width: 45px;
-  height: 5px;
-  left: 0;
-  background: #f36b47;
   top: 20px;
+}
+.header-menu-trigger:hover span {
+  background-color: #c7340d;
+}
+.header-menu-trigger:hover span:before,
+.header-menu-trigger:hover span:after {
+  background-color: #c7340d;
 }
 /* Slider */
 .slider {
@@ -192,14 +194,14 @@ p {
   padding: 60px 15px 60px 25px;
 }
 .talk-to-us p {
-  color: #ffffff;
+  color: white;
   font-size: 25px;
 }
 .talk-to-us h2 {
   font-size: 48px;
 }
 .talk-to-us .first-text {
-  color: #ffffff;
+  color: white;
 }
 .talk-to-us .second-text {
   color: #f36b47;
@@ -277,7 +279,7 @@ textarea {
   color: #9d9c9c;
 }
 .contact-form input[type="submit"] {
-  color: #ffffff;
+  color: white;
   background-color: #f36b47;
   margin: 0 auto;
   font-size: 20px;
@@ -285,8 +287,10 @@ textarea {
   border-radius: 3px;
   display: block;
   padding: 5px 120px 10px;
+  transition: 0.3s;
 }
 .contact-form input[type="submit"]:hover {
   cursor: pointer;
+  background-color: #c7340d;
 }
 /*# sourceMappingURL=styles.css.map */
