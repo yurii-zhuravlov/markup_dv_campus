@@ -1,3 +1,12 @@
 /.idea
-/var
+/var/*
+!/var/log/
+/var/log/*
+!/var/log/.gitkeep
 /node_modules
+
+# Ignore generated files.
+/assets/dist/css/styles-processed.css
+/pub/css/styles.min.css*
+/pub/images/*
+!/pub/images/.gitkeep
