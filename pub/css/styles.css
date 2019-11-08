@@ -233,10 +233,10 @@ p {
 .contact-details h2:before {
   content: "";
   position: absolute;
-  width: 50%;
+  width: 220px;
   height: 2px;
   bottom: 0;
-  left: 25%;
+  left: calc(50% - 110px);
   border-bottom: 2px solid #f36b47;
 }
 .contact-details span {
@@ -331,6 +331,34 @@ textarea {
     bottom: -10px;
     border: 4px solid transparent;
     border-top: 4px solid #f36b47;
+  }
+  .slider-item-title span {
+    font-weight: bold;
+  }
+  .slider-item-title .row {
+    font-size: 26px;
+    color: #eff7f8;
+    margin-bottom: 45px;
+  }
+  .slider-item-title .row span {
+    padding: 15px 60px;
+  }
+  .slider-item-title .second-row {
+    font-size: 24px;
+    color: #d8dbdb;
+  }
+  .slider-item-title .second-row span {
+    padding: 15px 35px;
+  }
+  .slide-description span {
+    font-size: 20px;
+  }
+  .slide-description strong {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 30px;
+    font-weight: bold;
   }
 }
 /*# sourceMappingURL=styles.css.map */

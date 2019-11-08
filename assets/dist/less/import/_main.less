@@ -227,10 +227,10 @@ p {
         &:before{
             content: "";
             position: absolute;
-            width: 50%;
+            width: 220px;
             height: 2px;
             bottom: 0;
-            left: 25%;
+            left: calc(50% - 110px);
             border-bottom: 2px solid @color-orange;
         }
     }
@@ -329,5 +329,37 @@ textarea {
                 }
             }
         }
+    }
+    .slider-item-title {
+        span {
+            font-weight: bold;
+        }
+        .row {
+            font-size: 26px;
+            color: @color-gray-8;
+            margin-bottom: 45px;
+            span {
+                padding: 15px 60px;
+            }
+        }
+        .second-row {
+            font-size: 24px;
+            color: @color-gray-7;
+            span {
+                padding: 15px 35px;
+            }
+        }
+    }
+    .slide-description {
+        span {
+            font-size: 20px;
+        }
+        strong {
+            font-size: 24px;
+        }
+    }
+    h2 {
+        font-size: 30px;
+        font-weight: bold;
     }
 }
